@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function Pixel(props) {
   const { selectedColor } = props;
 
-  const [pixelColor, setPixelColor] = useState("#fff");
+  const [pixelColor, setPixelColor] = useState("#ffffff");
   const [oldColor, setOldColor] = useState(pixelColor);
   const [canChangeColor, setCanChangeColor] = useState(true);
 
@@ -27,7 +27,7 @@ export default function Pixel(props) {
 
   return (
     <div
-      className="pixel w-3 h-3 cursor-pointer"
+      className="pixel w-3 h-3 cursor-pointer border"
       onClick={applyColor}
       onMouseEnter={changeColorOnHover}
       onMouseLeave={resetColor}
