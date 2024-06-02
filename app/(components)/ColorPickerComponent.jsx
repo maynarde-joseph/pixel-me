@@ -7,10 +7,15 @@ const ColorPickerComponent = () => {
 
   return (
     <div>
-      <ColorPicker color={color} onChange={(color) => setColor(color.hex)} />
-      <div className="flex flex-row">
-        <div className="w-30 h-12 m-0 p-0">{color}</div>
-        <div className="w-30 h-12 m-0 p-0 border outline rounded-xl"></div>
+      <div className="mb-4">
+        <ColorPicker color={color} onChange={(color) => setColor(color.hex)} />
+      </div>
+      <div className="flex flex-row gap-2">
+        <div
+          className="rounded-sm outline w-16"
+          style={{ backgroundColor: color }}
+        />
+        <div className="">{color}</div>
       </div>
     </div>
   );
