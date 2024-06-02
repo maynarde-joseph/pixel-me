@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import ColorPicker from "react-pick-color";
 
-const ColorPickerComponent = () => {
-  const [color, setColor] = useState("#fff");
-
+const ColorPickerComponent = ({ color, setColor }) => {
   return (
     <div>
       <div className="mb-4">
